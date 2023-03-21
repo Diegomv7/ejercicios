@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        ul{
+           list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            width: 25%;
+            background-color: rgb(240, 236, 229);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active{
+            color: black;
+        }
+        li a:hover:not(active){
+            background-color: rgb(21, 0, 255);
+            color: beige;
+        }
+        #home{
+            margin-left: 25%;
+            height: 680px;
+            background-color: antiquewhite;
+            padding: 25px;
+
+
+            background: url(https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1106&q=80);
+            background-repeat: no-repeat;
+            background-size: 120%;
+        }
+        #news{
+            margin-left: 25%;
+            height: 680px;
+            background-color: blueviolet;
+            padding: 25px;
+
+            background: url(https://images.unsplash.com/photo-1679231926690-cb1e8abfcefd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1391&q=80);
+            background-repeat: no-repeat;
+            background-size: 120%;
+
+        }
+        #contact{
+            margin-left: 25%;
+            height: 680px;
+            background-color: palevioletred;
+            padding: 25px;
+
+            
+            background: url(https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+            background-repeat: no-repeat;
+            background-size: 120%;
+        }
+        #about{
+            margin-left: 25%;
+            height: 680px;
+            background-color: yellowgreen;
+            padding: 25px;
+        
+            background: url(https://images.unsplash.com/photo-1549778399-f94fd24d4697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+            background-repeat: no-repeat;
+            background-size: 120%;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a class="active" href="#home">
+                Inicio
+            </a>
+            
+        </li>
+        <li>
+            <a href="#news">
+                Noticias
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contactos
+            </a>
+            
+        </li>
+
+        <li>
+            <a href="#about">
+                Acerca de Nosotros
+            </a>
+            
+        </li>
+    </ul>
+
+    <div id="home">
+        <h2>Titulo Inicio</h2>
+        <img src="https://marketplace.canva.com/EAE-iOFx0Tc/1/0/1600w/canva-fondo-de-pantalla-degradado-gradient-wallpaper-pnv1_Z5kCq8.jpg" alt="Fondo" width="50%">
+        <h3>Subtitulo</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus provident similique sunt commodi, veniam qui ad distinctio porro error iure adipisci vero ea rem sit! Nulla commodi veritatis nemo?
+        </p>
+    </div>
+
+
+    <div id="news">
+        <h2>Titulo Noticias</h2>
+        <h3>Subtitulo</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente totam fugiat fuga tempora, nemo magni in, commodi tempore quasi cum facilis distinctio culpa quo aliquid est similique dolore animi pariatur.
+        </p>
+    </div>
+
+    <div id="contact">
+        <h2>Titulo Contacto</h2>
+        <h3>Subtitulo</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis commodi distinctio tenetur officia ab eos cumque non perferendis odio saepe ut sapiente voluptates earum recusandae laboriosam facilis, velit adipisci rerum?
+        </p>
+    </div>
+
+
+    <div id="about">
+        <h2>Titulo Acerca de Nosotros</h2>
+        <h3>Subtitulo</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, cum? Soluta voluptate alias culpa atque animi ut quo blanditiis porro corrupti pariatur laboriosam velit ratione magnam neque, enim illum. Eveniet.
+        </p>
+    </div>
+
+</body>
+</html>
