@@ -1,0 +1,99 @@
+body{
+    animation: colores 5s infinite;
+}
+@keyframes colores {
+    0%{
+        background: palevioletred;
+    }
+    25%{
+        background: black;
+
+    }
+    50%{
+        background: peru;
+    }
+    100%{
+        background: yellowgreen;
+    }
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 250px;
+    color: beige;
+}
+.cuadroBlanco{
+    background: whitesmoke;
+    position: absolute;
+    animation: mueveCuadro 5s infinite;
+}
+#cuadroBlanco1{
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+#cuadroBlanco2{
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
+@keyframes mueveCuadro {
+    from{
+        top: 6px;
+    }
+    to{
+        top: 520px;
+    }
+}
+#cuadroAzul1{
+    width: 100px;
+    height: 100px;
+    background: dodgerblue;
+    position: absolute;
+    left: 350px;
+    animation: mueveAzul 8s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+}
+@keyframes mueveAzul {
+    0% {top: 0px;}
+    25% {top: 400px; width: 300px; background: khaki;}
+    50% {top: 165px; background: rebeccapurple;}
+    100% {top: 320px;}
+}
+#cuadroEpilepsia{
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    position: relative;
+    left: 500px;
+    animation: moverEpilepsia 8s infinite;
+}
+@keyframes moverEpilepsia {
+    0% {top: 0px; left: 550px; background: lightcoral;}
+    25% {top: 0px; left: 720px; background: lightskyblue;}
+    50% {top: 0px; left: 600px; background: green;}
+    100% {top: 0px; left: 650px; background: tomato;}
+}
+#circulito{
+    width: 100px;
+    height: 100px;
+    left: 800px;
+    background: lightgreen;
+    position: absolute;
+    border-radius: 50%;
+    animation: crece 3s infinite;
+}
+@keyframes crece {
+    0% {top: 0px; width: 100px; height: 100px;}
+    100% {top: 0px; width: 100%; height: 100%;}
+}
+.gradiante{
+    width: 1100px;
+    height: 200px;
+    padding: 200px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,87,1) 100%); 
+    border-radius: 70px;
+}
