@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        h1{
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Hola javaScript</h1>
+    <p id="Texto">Este es un parrafo</p>
+    <ul id="Colores">
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+    <script>
+        var titulo;
+        titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Feliz cumpleaños ferxxo";
+        var Texto; 
+        Texto = document.getElementById("Texto");
+        Texto.style.fontSize = "80px";
+        Texto.innerHTML = "Real Madrid 4 - Chelsea 0";
+        var Colores;
+        Colores = document.getElementById("Colores");
+        Colores.style.display = "none";
+        // Colores.style.display = "block";
+
+        //Camel case
+        function cambiarColor() {
+            //alert('Hola JavaScript');
+            console.log('Hola Developer');
+        }
+        cambiarColor();
+
+        document.write('Este es un numero generado por JS');
+        document.write(50 * 60);
+
+        var cadena = "Hola soy un string";
+        console.log("Esta es una cadena" + cadena);
+
+        let a, b, c;
+        a = 5;
+        b = 9;
+        c = 7;
+        console.log(c);
+
+        var radio = 10;
+        const PI = 3.1416
+
+        function calcularArea(radio) {
+            let areaTemporal = PI * radio * radio;
+            console.log("Area Temporal " , areaTemporal);
+            return areaTemporal;
+        }
+
+        var area = calcularArea(radio);
+        console.log(area);
+
+        
+        let numero1 = 10.5;
+        let numero2 = 10;
+        let $multi_plica = numero1 * numero2
+        console.log($multi_plica);
+
+        let sinValor;
+        console.log(sinValor);
+
+         // let Hoisting
+        let auto = "BMW";
+        //let auto;  - error con let 
+        console.log(auto);
+        let variableLocal = 10
+
+        {
+            let variableLocal = 2;
+            console.log("Primero: ", variableLocal);
+        }
+
+        console.log("Segundo: ", variableLocal);
+
+        const PI_ = 3.1416
+
+        const autos = ["VW","Chevrolet", 8, , , 5, 6, "BMW"]
+        console.log(autos);
+        console.log(autos[1] + autos[2]);
+
+        let autoNuevo = {
+            tipo : "Toyota",
+            modelo : 500,
+            color : 'blanco'
+        }
+
+        console.log(autoNuevo.color);
+        console.log(autoNuevo);
+
+        var edad = 27;
+            var edad;
+            console.log(edad);
+ 
+            let edadSamuel = 25;
+            //let edadSamuel;
+ 
+            //Let Hoisting
+ 
+            var x1 = 4.5;
+            console.log(typeof x1);
+ 
+            var y1 = 109845634;
+            console.log(typeof y1);
+ 
+            var z1 = "Hola";
+            console.log(typeof z1);
+ 
+            var p1 = false;
+            console.log(typeof p1);
+ 
+            console.log("resultado:",typeof autos);
+            console.log(typeof autoNuevo);
+ 
+            console.log( 3 > 10);
+            console.log("Thor" > "Iron Man");
+            console.log("a" > "b");
+            console.log("de" < "bc")
+            console.log( true && false);
+            console.log( true && true);
+            console.log( true || false);
+ 
+            //Operador ternario
+            let edadEmilio = 25;
+            if(edadEmilio > 18)
+            {
+                alert('Verdadero');
+            }
+            else
+            {
+                alert('Falso');
+            }
+
+            
+
+
+    </script>
+</body>
+</html>
